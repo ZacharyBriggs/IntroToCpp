@@ -21,6 +21,7 @@ int main()
 		if (int y = 0)
 		{
 			int	x = 100;
+			std::cout << x << std::endl;
 		}
 	}
 	//3. Write a program that accepts an integer that represents the month of the year. 

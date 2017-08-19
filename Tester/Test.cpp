@@ -1,16 +1,12 @@
 #include <iostream>
 int main()
 {
-
-	int counter = 0;
-	do
+	int y;
+	std::cin >> y;
+	if(int y = 0)
 	{
-		counter++;
-		if (counter == 1)
-			break;
-		else
-			std::cout << counter << std::endl;
-	} while (counter < 10);
-		system("pause");
-
+		int	x = 100;
+		std::cout << x << std::endl;
+	}
+	system("pause");
 }

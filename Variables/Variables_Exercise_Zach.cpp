@@ -30,7 +30,6 @@ void main()
 	//and store the result in variables called “a” and “b” print the result to screen.Write code 
 	//that swaps the values for these variables, then print the variables “a” and “b” again.
 	//You should comment your code.
-		{
 			std::cout << "Enter two numbers.\n";
 			int inputA, inputB;
 			int inputC = 0;
@@ -41,11 +40,7 @@ void main()
 			inputA = inputC;
 			std::cout << inputA << " " << inputB << std::endl;
 
-			system("pause");
-		}
-
 	//4. Ask the user for 5 numbers and output the average of these numbers.
-		{
 			int numA, numB, numC, numD, numE;
 			std::cout << "Enter five numbers.\n";
 			std::cin >> numA >> numB >> numC >> numD >> numE;
@@ -54,24 +49,20 @@ void main()
 			std::cout << numF << std::endl;
 			system("pause");
 
-		}
 
 
 	//5. Redo question 3 but allows the user to input the values to be swapped and provide information
 	//in the console proving the data was swapped.
-		{
 			std::cout << "Enter two numbers.\n";
-			int inputA, inputB;
-			int inputC = 0;
-			std::cin >> inputA >> inputB;
-			inputC = inputB;
+			int input1, input2, input3;
+			std::cin >> input1 >> input2;
+			input3 = input2;
 			std::cout << "Your numbers are...\n";
-			std::cout << inputA << " " << inputB << std::endl;
+			std::cout << input1 << " " << input2 << std::endl;
 			std::cout << "Swapping numbers...\n";
-			inputB = inputA;
-			inputA = inputC;
-			std::cout << inputA << " " << inputB << std::endl;
+			input2 = input1;
+			input1 = input3;
+			std::cout << input1 << " " << input2 << std::endl;
 
 			system("pause");
-		}
 }
