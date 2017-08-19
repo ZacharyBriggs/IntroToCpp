@@ -8,13 +8,13 @@ int main()
 	{
 		std::cout << i << std::endl;
 	}
-	0-99
+	//0-99
 	//b. 
 	for (int i = 100; i >= 0; i -= 2)
 	{
 		std::cout << i << std::endl;
 	}
-	100, 98, 96, 94, etc until it hits 0.
+	//100, 98, 96, 94, etc until it prints 0.
 	//c. 
 	int iter = 0;
 	while (iter != 25)
@@ -22,7 +22,7 @@ int main()
 		std::cout << iter << std::endl;
 		iter += 5;
 	}
-	0, 5, 10, 15, 20.
+	//0, 5, 10, 15, 20.
 	//d. 
 	int counter = 0;
 	do
@@ -33,7 +33,8 @@ int main()
 		else
 			std::cout << counter << std::endl;
 	} while (counter < 10);
-	1-9
+	//Nothing
+
 	//2. Using a for loop, iterate through numbers 0 to 100.
 	//-For multiples of 3 print “Fizz”
 	//- For multiples of 5 print “Buzz”
@@ -48,11 +49,10 @@ int main()
 
 	//4. Create a loop that prints all even numbers between 0 and 100, without printing 0 or 100
 	{
-		for (int i = 100; i < 0; --i)
+		for (int even = 98; even > 0; even -= 2)
 		{
-			std::cout << 'i' << std::endl;
+			std::cout << even << std::endl;
 		}
-		system("pause");
 	}
 	system("pause");
 }

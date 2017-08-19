@@ -27,6 +27,7 @@ int main()
 	//It should then display the number of days in that month. If a number that doesn’t correspond 
 	//to a month is entered then the program should display an error message. You must use a switch statement
 	int month = 12;
+	std::cout << "Put in a number representing a month.\n";
 	std::cin >> month;
 
 	switch (month)
@@ -98,6 +99,7 @@ int main()
 		int daysA = 31;
 		int daysB = 30;
 		int daysC = 28;
+		std::cout << "Put in a number representing a monthn\n";
 		std::cin >> month;
 		if (month == 1)
 			std::cout << daysA << std::endl;
