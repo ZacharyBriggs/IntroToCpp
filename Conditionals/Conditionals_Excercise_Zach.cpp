@@ -127,11 +127,9 @@ int main()
 			std::cout << "Not a Month.\n";
 		system("pause");
 	}
-			
-
 
 	//5. Convert problem 2 into a ternary operator
-		if (int y2 = 0)
-			int	x2 = 100;
-
+	int y2 = 0;
+	int x2;
+	(y2 == 0) ? x2 = 100 : x2 = 0;
 }

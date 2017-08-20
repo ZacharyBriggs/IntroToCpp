@@ -58,6 +58,14 @@ int main()
 
 	//3. Repeat problem 2 using a while loop and a do while loop.
 	//while loop
+		int numB = 0;
+		do
+		{
+			numB++;
+			std::cout << numB << std::endl;
+		} while (!(numB % 3));
+		std::cout << "fizz\n";
+		while (numB != 100);
 
 
 	//4. Create a loop that prints all even numbers between 0 and 100, without printing 0 or 100
