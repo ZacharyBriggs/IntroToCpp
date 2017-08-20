@@ -58,18 +58,34 @@ int main()
 
 	//3. Repeat problem 2 using a while loop and a do while loop.
 	//while loop
-		int numB = 0;
-		do
+		int numB = -1;
+		while (numB != 100)
 		{
 			numB++;
-			std::cout << numB << std::endl;
-		} while (!(numB % 3));
-		std::cout << "fizz\n";
-		while (numB != 100);
+			if (numB == 0)
+				std::cout << numB << std::endl;
+			else if (numB % 3 && numB % 5)
+				std::cout << numB << std::endl;
+			else if (!(numB % 3 || numB % 5))
+			{
+				std::cout << "fizzbuzz\n";
+				continue;
+			}
+			else if (!(numB % 3))
+			{
+				std::cout << "fizz\n";
+				continue;
+			}
+			else if (!(numB % 5))
+			{
+				std::cout << "buzz\n";
+				continue;
+			}
+		}
 
 
 	//4. Create a loop that prints all even numbers between 0 and 100, without printing 0 or 100
-		for (int even = 98; even > 0; even -= 2)
-			std::cout << even << std::endl;
+		for (int evenNum = 98; evenNum > 0; evenNum -= 2)
+			std::cout << evenNum << std::endl;
 	system("pause");
 }

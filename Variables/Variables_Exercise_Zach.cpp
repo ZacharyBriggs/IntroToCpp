@@ -47,9 +47,6 @@ void main()
 			numA, numB, numC, numD, numE;
 			int numF = (numA + numB + numC + numD + numE) / 5;
 			std::cout << numF << std::endl;
-			system("pause");
-
-
 
 	//5. Redo question 3 but allows the user to input the values to be swapped and provide information
 	//in the console proving the data was swapped.
