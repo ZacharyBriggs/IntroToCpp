@@ -17,10 +17,10 @@ int main()
 		//True
 
 	//2. Write an if statement that assigns 100 to the value of x when y is equal to zero
-	int x;
-	if (int y = 0)
-			x = 100;
-			std::cout << x << std::endl;
+	int y = 0;
+	if (y == 0)
+		int x = 100;
+
 	//3. Write a program that accepts an integer that represents the month of the year. 
 	//It should then display the number of days in that month. If a number that doesn’t correspond 
 	//to a month is entered then the program should display an error message. You must use a switch statement

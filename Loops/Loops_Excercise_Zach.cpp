@@ -41,7 +41,6 @@ int main()
 	//- For multiples of 3 and 5 print “FizzBuzz”
 	//- Otherwise print the number.
 	//Note, you will need to use the modulus operator (%)
-	{
 		int numA;
 		for (numA = 0; numA <= 100; numA++)
 		{
@@ -56,8 +55,6 @@ int main()
 			else
 				std::cout << numA << std::endl;
 		}
-		system("pause");
-	}
 
 	//3. Repeat problem 2 using a while loop and a do while loop.
 	//while loop
