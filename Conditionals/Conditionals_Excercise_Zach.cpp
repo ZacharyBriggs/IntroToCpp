@@ -17,13 +17,10 @@ int main()
 		//True
 
 	//2. Write an if statement that assigns 100 to the value of x when y is equal to zero
-	{
-		if (int y = 0)
-		{
-			int	x = 100;
+	int x;
+	if (int y = 0)
+			x = 100;
 			std::cout << x << std::endl;
-		}
-	}
 	//3. Write a program that accepts an integer that represents the month of the year. 
 	//It should then display the number of days in that month. If a number that doesn’t correspond 
 	//to a month is entered then the program should display an error message. You must use a switch statement
@@ -100,7 +97,7 @@ int main()
 		int daysA = 31;
 		int daysB = 30;
 		int daysC = 28;
-		std::cout << "Put in a number representing a monthn\n";
+		std::cout << "Put in a number representing a month.\n";
 		std::cin >> month;
 		if (month == 1)
 			std::cout << daysA << std::endl;
@@ -134,10 +131,7 @@ int main()
 
 
 	//5. Convert problem 2 into a ternary operator
-	{
-		if (int y = 0)
-		{
-			int	x = 100;
-		}
-	}
+		if (int y2 = 0)
+			int	x2 = 100;
+
 }
