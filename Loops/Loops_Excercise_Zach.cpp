@@ -44,9 +44,7 @@ int main()
 		int numA;
 		for (numA = 0; numA <= 100; numA++)
 		{
-			if (numA == 0)
-				std::cout << numA << std::endl;
-			else if (!(numA % 5 || numA % 3))
+			if (!(numA % 5 || numA % 3))
 				std::cout << "fizzbuzz\n";
 			else if (!(numA % 5))
 				std::cout << "buzz\n";
