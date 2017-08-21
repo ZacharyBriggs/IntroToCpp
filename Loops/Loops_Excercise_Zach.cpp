@@ -52,10 +52,8 @@ int main()
 				std::cout << "fizz\n";
 			else if (multFive == 0)
 				std::cout << "buzz\n";
-
 			else
 				std::cout << numA << std::endl;
-
 		}
 
 	//3. Repeat problem 2 using a while loop and a do while loop.
