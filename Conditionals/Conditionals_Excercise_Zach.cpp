@@ -86,10 +86,6 @@ int main()
 
 
 	}
-	system("pause");
-
-
-
 
 	//4. Redo problem 3 using if statements
 	{
