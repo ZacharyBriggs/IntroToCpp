@@ -44,15 +44,21 @@ int main()
 		int numA;
 		for (numA = 0; numA <= 100; numA++)
 		{
-			if (!(numA % 5 || numA % 3))
+			int multThree = numA % 3;
+			int multFive = numA % 5;
+			if (multFive == 0 && multThree == 0)
 				std::cout << "fizzbuzz\n";
-			else if (!(numA % 5))
-				std::cout << "buzz\n";
-			else if (!(numA % 3))
+			else if (multThree == 0)
 				std::cout << "fizz\n";
+			else if (multFive == 0)
+				std::cout << "buzz\n";
+
 			else
 				std::cout << numA << std::endl;
+
 		}
+		system("pause");
+}
 
 	//3. Repeat problem 2 using a while loop and a do while loop.
 	//while loop
