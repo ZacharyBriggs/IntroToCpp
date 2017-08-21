@@ -57,35 +57,30 @@ int main()
 				std::cout << numA << std::endl;
 
 		}
-		system("pause");
-}
 
 	//3. Repeat problem 2 using a while loop and a do while loop.
 	//while loop
 		int numB = -1;
-		while (numB != 100)
+		do
 		{
 			numB++;
-			if (numB == 0)
-				std::cout << numB << std::endl;
-			else if (numB % 3 && numB % 5)
-				std::cout << numB << std::endl;
-			else if (!(numB % 3 || numB % 5))
-			{
+			int multThree = numB % 3;
+			int multFive = numB % 5;
+			if (multThree == 0 && multFive == 0)
 				std::cout << "fizzbuzz\n";
-				continue;
-			}
-			else if (!(numB % 3))
+			else if (multThree == 0)
 			{
 				std::cout << "fizz\n";
 				continue;
 			}
-			else if (!(numB % 5))
+			else if (multFive == 0)
 			{
 				std::cout << "buzz\n";
 				continue;
 			}
-		}
+			else
+				std::cout << numB << std::endl;
+		} while (numB != 100);
 
 
 	//4. Create a loop that prints all even numbers between 0 and 100, without printing 0 or 100

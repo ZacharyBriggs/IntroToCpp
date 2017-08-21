@@ -1,22 +1,30 @@
 #include <iostream>
 int main()
 {
-	int numA;
-	for (numA = 0; numA <= 100; numA++)
+	int numB = -1;
+	do
 	{
-		int multThree = numA % 3;
-		int multFive = numA % 5;
-		if (multFive == 0 && multThree == 0)
+		numB++;
+		int multThree = numB % 3;
+		int multFive = numB % 5;
+		if (multThree == 0 && multFive == 0)
 			std::cout << "fizzbuzz\n";
 		else if (multThree == 0)
+		{
 			std::cout << "fizz\n";
+			continue;
+		}
 		else if (multFive == 0)
+		{
 			std::cout << "buzz\n";
-		
+			continue;
+		}
 		else
-			std::cout << numA << std::endl;
-		
+			std::cout << numB << std::endl;
 	}
+
+	while (numB != 100);
+	
 	system("pause");
 }
 
