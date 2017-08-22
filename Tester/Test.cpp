@@ -1,16 +1,14 @@
 #include <iostream>
 int main()
 {
-	int fiveGuys[5];
-	std::cout << "Put in 5 numbers.\n";
-	
-	for (int i = 0; i < 5; i++)
+	int tenThruOne[10];
+	int iter = 9;
+	for (int a = 10; a >= 1; a--)
 	{
-		int input= 0;
-		std::cin >> fiveGuys[input];
-		input++;
+		tenThruOne[iter] = a;
+		std::cout << tenThruOne[iter] << std::endl;
+		iter--;
 	}
-	std::cout << fiveGuys[5] << std::endl;
 	system("pause");
 }
 
