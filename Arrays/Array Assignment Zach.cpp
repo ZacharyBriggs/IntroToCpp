@@ -37,16 +37,23 @@ int main()
 	//6. Create a an array of size five then ask the user to input five 
 	//number into the array. Display the largest and smallest numbers 
 	//to the console.
-	int fiveGuys[5];
-	std::cout << "Put in 5 numbers.\n";
-	int input = 0;
-
-	for (int i = 0; i < 5; i++)
-	{
-		std::cin >> fiveGuys[input];
-		input++;
-	}
-	std::cout << fiveGuys[0] << std::endl;
+		int fiveGuys[5];
+		std::cout << "Put in 5 numbers.\n";
+		int input = 0;
+		int bigNumber = 0;
+		int smallNumber = 0;
+		for (int i = 0; i < 5; i++)
+		{
+			std::cin >> fiveGuys[input];
+			input++;
+		}
+		for (int valueOne = 0; valueOne <= 4; valueOne++)
+			if (fiveGuys[valueOne] >= bigNumber)
+				bigNumber = fiveGuys[valueOne];
+			else if (fiveGuys[valueOne] <= smallNumber)
+				smallNumber = fiveGuys[valueOne];
+		std::cout << bigNumber << std::endl;
+		std::cout << smallNumber << std::endl;
 	//7. Create a program that creates a small 3x3 array of integers.Use a nested for 
 	//loop to initialise the numbers 1 - 9. Output the numbers in a grid format.
 		int grid[3][3];
