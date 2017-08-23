@@ -33,7 +33,7 @@ int main()
 			strcpy_s(slimDragon, dragonOne);
 		}
 	}
-	float bobAvrg = dragonFood[0][0] + dragonFood[0][1] + dragonFood[0][2] + dragonFood[0][3] + dragonFood[0][4] + dragonFood[0][5] + dragonFood[0][6] / 7;
+	float bobAvrg = (dragonFood[0][0] + dragonFood[0][1] + dragonFood[0][2] + dragonFood[0][3] + dragonFood[0][4] + dragonFood[0][5] + dragonFood[0][6]) / 7;
 	std::cout << "How much did Cat eat on each day of the week?\n";
 	for (int days2 = 0; days2 <= 6; days2++)
 	{
@@ -49,7 +49,7 @@ int main()
 			strcpy_s(slimDragon, dragonTwo);
 		}
 	}
-	float catAvrg = dragonFood[1][0] + dragonFood[1][1] + dragonFood[1][2] + dragonFood[1][3] + dragonFood[1][4] + dragonFood[1][5] + dragonFood[1][6] / 7;
+	float catAvrg = (dragonFood[1][0] + dragonFood[1][1] + dragonFood[1][2] + dragonFood[1][3] + dragonFood[1][4] + dragonFood[1][5] + dragonFood[1][6]) / 7;
 	std::cout << "How much did Scott eat on each day of the week?\n";
 	for (int days3 = 0; days3 <= 6; days3++)
 	{
@@ -65,10 +65,24 @@ int main()
 			strcpy_s(slimDragon, dragonThree);
 		}
 	}
-	float scottAvrg = dragonFood[2][0] + dragonFood[2][1] + dragonFood[2][2] + dragonFood[2][3] + dragonFood[2][4] + dragonFood[2][5] + dragonFood[2][6] / 7;
+	float scottAvrg = (dragonFood[2][0] + dragonFood[2][1] + dragonFood[2][2] + dragonFood[2][3] + dragonFood[2][4] + dragonFood[2][5] + dragonFood[2][6]) / 7;
+	float daySun = (dragonFood[0][0] + dragonFood[1][0] + dragonFood[2][0]) / 3;
+	float dayMon = (dragonFood[0][1] + dragonFood[1][1] + dragonFood[2][1]) / 3;
+	float dayTues = (dragonFood[0][2] + dragonFood[1][2] + dragonFood[2][2]) / 3;
+	float dayWed = (dragonFood[0][3] + dragonFood[1][3] + dragonFood[2][3]) / 3;
+	float dayThur = (dragonFood[0][4] + dragonFood[1][4] + dragonFood[2][4]) / 3;
+	float dayFri = (dragonFood[0][5] + dragonFood[1][5] + dragonFood[2][5]) / 3;
+	float daySat = (dragonFood[0][6] + dragonFood[1][6] + dragonFood[2][6]) / 3;
 	std::cout << bobAvrg << std::endl;
 	std::cout << catAvrg << std::endl;
 	std::cout << scottAvrg << std::endl;
+	std::cout << daySun << std::endl;
+	std::cout << dayMon << std::endl;
+	std::cout << dayTues << std::endl;
+	std::cout << dayWed<< std::endl;
+	std::cout << dayThur << std::endl;
+	std::cout << dayFri << std::endl;
+	std::cout << daySat << std::endl;
 	std::cout << greatestFoodEaten << std::endl;
 	std::cout << fatDragon << std::endl;
 	std::cout << leastFoodEaten << std::endl;
