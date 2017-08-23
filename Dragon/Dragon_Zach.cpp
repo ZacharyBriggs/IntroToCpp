@@ -21,16 +21,26 @@ int main()
 			greatestFoodEaten = dragonFood[0][days];
 		if (dragonFood[0][days] < leastFoodEaten)
 			leastFoodEaten = dragonFood[0][days];
-
+	}
+	std::cout << "How much did Cat eat on each day of the week?\n";
+	for (int days2 = 0; days2 <= 6; days2++)
+	{
+		std::cin >> dragonFood[1][days2];
+		if (dragonFood[1][days2] > greatestFoodEaten)
+			greatestFoodEaten = dragonFood[1][days2];
+		if (dragonFood[1][days2] < leastFoodEaten)
+			leastFoodEaten = dragonFood[1][days2];
+	}
+	std::cout << "How much did Scott eat on each day of the week?\n";
+	for (int days3 = 0; days3 <= 6; days3++)
+	{
+		std::cin >> dragonFood[2][days3];
+		if (dragonFood[2][days3] > greatestFoodEaten)
+			greatestFoodEaten = dragonFood[2][days3];
+		if (dragonFood[2][days3] < leastFoodEaten)
+			leastFoodEaten = dragonFood[2][days3];
 	}
 	std::cout << greatestFoodEaten << std::endl;
 	std::cout << leastFoodEaten << std::endl;
-	std::cout << "How much did Cat eat on each day of the week?\n";
-	for (int days2 = 0; days2 <= 6; days2++)
-		std::cin >> dragonFood[1][days2];
-	std::cout << "How much did Scott eat on each day of the week?\n";
-	for (int days3 = 0; days3 <= 6; days3++)
-		std::cin >> dragonFood[2][days3];
-
 	system("pause");
 }
