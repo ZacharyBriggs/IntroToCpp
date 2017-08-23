@@ -28,8 +28,12 @@ int main()
 			strcpy_s(fatDragon, dragonOne);
 		}
 		if (dragonFood[0][days] < leastFoodEaten)
+		{
 			leastFoodEaten = dragonFood[0][days];
+			strcpy_s(slimDragon, dragonOne);
+		}
 	}
+	float bobAvrg = dragonFood[0][0] + dragonFood[0][1] + dragonFood[0][2] + dragonFood[0][3] + dragonFood[0][4] + dragonFood[0][5] + dragonFood[0][6] / 7;
 	std::cout << "How much did Cat eat on each day of the week?\n";
 	for (int days2 = 0; days2 <= 6; days2++)
 	{
@@ -40,8 +44,12 @@ int main()
 			strcpy_s(fatDragon, dragonTwo);
 		}
 		if (dragonFood[1][days2] < leastFoodEaten)
+		{
 			leastFoodEaten = dragonFood[1][days2];
+			strcpy_s(slimDragon, dragonTwo);
+		}
 	}
+	float catAvrg = dragonFood[1][0] + dragonFood[1][1] + dragonFood[1][2] + dragonFood[1][3] + dragonFood[1][4] + dragonFood[1][5] + dragonFood[1][6] / 7;
 	std::cout << "How much did Scott eat on each day of the week?\n";
 	for (int days3 = 0; days3 <= 6; days3++)
 	{
@@ -52,10 +60,18 @@ int main()
 			strcpy_s(fatDragon, dragonThree);
 		}
 		if (dragonFood[2][days3] < leastFoodEaten)
+		{
 			leastFoodEaten = dragonFood[2][days3];
+			strcpy_s(slimDragon, dragonThree);
+		}
 	}
-	std::cout << greatestFoodEaten;
+	float scottAvrg = dragonFood[2][0] + dragonFood[2][1] + dragonFood[2][2] + dragonFood[2][3] + dragonFood[2][4] + dragonFood[2][5] + dragonFood[2][6] / 7;
+	std::cout << bobAvrg << std::endl;
+	std::cout << catAvrg << std::endl;
+	std::cout << scottAvrg << std::endl;
+	std::cout << greatestFoodEaten << std::endl;
 	std::cout << fatDragon << std::endl;
 	std::cout << leastFoodEaten << std::endl;
+	std::cout << slimDragon << std::endl;
 	system("pause");
 }
