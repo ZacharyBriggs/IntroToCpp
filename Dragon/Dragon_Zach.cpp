@@ -11,9 +11,20 @@
 int main()
 {
 	float dragonFood[3][7];
+	float greatestFoodEaten = dragonFood[0][0];
+	float leastFoodEaten = dragonFood[0][0];
 	std::cout << "How much did Bob eat on each day of the week?\n";
 	for (int days = 0; days <= 6; days++)
+	{
 		std::cin >> dragonFood[0][days];
+		if (dragonFood[0][days] > greatestFoodEaten)
+			greatestFoodEaten = dragonFood[0][days];
+		if (dragonFood[0][days] < leastFoodEaten)
+			leastFoodEaten = dragonFood[0][days];
+
+	}
+	std::cout << greatestFoodEaten << std::endl;
+	std::cout << leastFoodEaten << std::endl;
 	std::cout << "How much did Cat eat on each day of the week?\n";
 	for (int days2 = 0; days2 <= 6; days2++)
 		std::cin >> dragonFood[1][days2];
