@@ -17,7 +17,7 @@ int main()
 		//20
 	//b. 
 	int ages[10];
-	//	40
+		//	40
 	//c. 
 	char letters[26];
 		//26
@@ -26,37 +26,36 @@ int main()
 	//4. Using the array created in problem 3 print the 5th index.
 	std::cout << values[4] << std::endl;
 	//5. Using a loop, populate an array of size 10 with the values 10 - 1.
-		int tenThruOne[10];
-		int iter = 9;
-		for (int a = 10; a >= 1; a--)
-		{
-			tenThruOne[iter] = a;
-			std::cout << tenThruOne[iter] << std::endl;
-			iter--;
-		}
+	int tenThruOne[10];
+	int iter = 9;
+	for (int a = 10; a >= 1; a--)
+	{
+		tenThruOne[iter] = a;
+		std::cout << tenThruOne[iter] << std::endl;
+		iter--;
+	}
 	//6. Create a an array of size five then ask the user to input five 
 	//number into the array. Display the largest and smallest numbers 
 	//to the console.
-			int fiveGuys[5];
-			std::cout << "Put in 5 numbers.\n";
-			int input = 0;
-
-			for (int i = 0; i < 5; i++)
-			{
-				std::cin >> fiveGuys[input];
-				input++;
-			}
-			int bigNumber = fiveGuys[0];
-			int smallNumber = fiveGuys[0];
-			for (int valueOne = 0; valueOne <= 4; valueOne++)
-			{
-				if (fiveGuys[valueOne] < smallNumber)
+	int fiveGuys[5];
+	std::cout << "Put in 5 numbers.\n";
+	int input = 0;
+		for (int i = 0; i < 5; i++)
+		{
+			std::cin >> fiveGuys[input];
+			input++;
+		}
+		int bigNumber = fiveGuys[0];
+		int smallNumber = fiveGuys[0];
+		for (int valueOne = 0; valueOne <= 4; valueOne++)
+		{
+			if (fiveGuys[valueOne] < smallNumber)
 					smallNumber = fiveGuys[valueOne];
-				if (fiveGuys[valueOne] >= bigNumber)
+			if (fiveGuys[valueOne] >= bigNumber)
 					bigNumber = fiveGuys[valueOne];
-			}
-			std::cout << bigNumber << std::endl;
-			std::cout << smallNumber << std::endl;
+		}
+	std::cout << bigNumber << std::endl;
+	std::cout << smallNumber << std::endl;
 	//7. Create a program that creates a small 3x3 array of integers.Use a nested for 
 	//loop to initialise the numbers 1 - 9. Output the numbers in a grid format.
 		int grid[3][3];

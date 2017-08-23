@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Character Arrays", "Character Arrays\Character Arrays.vcxproj", "{4679D3BF-E549-48B8-8C91-F58CB461340A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bad Dragon", "Dragon\Dragon.vcxproj", "{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{4679D3BF-E549-48B8-8C91-F58CB461340A}.Release|x64.Build.0 = Release|x64
 		{4679D3BF-E549-48B8-8C91-F58CB461340A}.Release|x86.ActiveCfg = Release|Win32
 		{4679D3BF-E549-48B8-8C91-F58CB461340A}.Release|x86.Build.0 = Release|Win32
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Debug|x64.ActiveCfg = Debug|x64
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Debug|x64.Build.0 = Debug|x64
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Debug|x86.ActiveCfg = Debug|Win32
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Debug|x86.Build.0 = Debug|Win32
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Release|x64.ActiveCfg = Release|x64
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Release|x64.Build.0 = Release|x64
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Release|x86.ActiveCfg = Release|Win32
+		{C195F9D0-AB62-4150-AA03-4E8FA46D4F54}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
