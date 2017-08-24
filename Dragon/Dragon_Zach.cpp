@@ -73,9 +73,11 @@ int main()
 	float dayThur = (dragonFood[0][4] + dragonFood[1][4] + dragonFood[2][4]) / 3;
 	float dayFri = (dragonFood[0][5] + dragonFood[1][5] + dragonFood[2][5]) / 3;
 	float daySat = (dragonFood[0][6] + dragonFood[1][6] + dragonFood[2][6]) / 3;
+	std::cout << "Average food eaten by Bob, Cat, and Scott.\n";
 	std::cout << bobAvrg << std::endl;
 	std::cout << catAvrg << std::endl;
 	std::cout << scottAvrg << std::endl;
+	std::cout << "Average food eaten by day from Sunday to Monday.\n";
 	std::cout << daySun << std::endl;
 	std::cout << dayMon << std::endl;
 	std::cout << dayTues << std::endl;
@@ -83,8 +85,10 @@ int main()
 	std::cout << dayThur << std::endl;
 	std::cout << dayFri << std::endl;
 	std::cout << daySat << std::endl;
+	std::cout << "The most food eaten in one day and who ate it.\n";
 	std::cout << greatestFoodEaten << std::endl;
 	std::cout << fatDragon << std::endl;
+	std::cout << "The least food eaten in one day and who ate it.\n";
 	std::cout << leastFoodEaten << std::endl;
 	std::cout << slimDragon << std::endl;
 	system("pause");
