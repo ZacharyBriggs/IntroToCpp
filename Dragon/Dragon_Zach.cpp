@@ -11,7 +11,7 @@
 int main()
 {
 	float dragonFood[3][7];
-	float greatestFoodEaten = dragonFood[0][0];
+	float mostFoodEaten = dragonFood[0][0];
 	float leastFoodEaten = dragonFood[0][0];
 	char fatDragon[7];
 	char slimDragon[7];
@@ -22,9 +22,9 @@ int main()
 	for (int days = 0; days <= 6; days++)
 	{
 		std::cin >> dragonFood[0][days];
-		if (dragonFood[0][days] > greatestFoodEaten)
+		if (dragonFood[0][days] > mostFoodEaten)
 		{
-			greatestFoodEaten = dragonFood[0][days];
+			mostFoodEaten = dragonFood[0][days];
 			strcpy_s(fatDragon, dragonOne);
 		}
 		if (dragonFood[0][days] < leastFoodEaten)
@@ -38,9 +38,9 @@ int main()
 	for (int days2 = 0; days2 <= 6; days2++)
 	{
 		std::cin >> dragonFood[1][days2];
-		if (dragonFood[1][days2] > greatestFoodEaten)
+		if (dragonFood[1][days2] > mostFoodEaten)
 		{
-			greatestFoodEaten = dragonFood[1][days2];
+			mostFoodEaten = dragonFood[1][days2];
 			strcpy_s(fatDragon, dragonTwo);
 		}
 		if (dragonFood[1][days2] < leastFoodEaten)
@@ -54,9 +54,9 @@ int main()
 	for (int days3 = 0; days3 <= 6; days3++)
 	{
 		std::cin >> dragonFood[2][days3];
-		if (dragonFood[2][days3] > greatestFoodEaten)
+		if (dragonFood[2][days3] > mostFoodEaten)
 		{
-			greatestFoodEaten = dragonFood[2][days3];
+			mostFoodEaten = dragonFood[2][days3];
 			strcpy_s(fatDragon, dragonThree);
 		}
 		if (dragonFood[2][days3] < leastFoodEaten)
@@ -86,7 +86,7 @@ int main()
 	std::cout << dayFri << std::endl;
 	std::cout << daySat << std::endl;
 	std::cout << "The most food eaten in one day and who ate it.\n";
-	std::cout << greatestFoodEaten << std::endl;
+	std::cout << mostFoodEaten << std::endl;
 	std::cout << fatDragon << std::endl;
 	std::cout << "The least food eaten in one day and who ate it.\n";
 	std::cout << leastFoodEaten << std::endl;

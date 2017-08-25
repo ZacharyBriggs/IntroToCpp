@@ -58,12 +58,23 @@ int main()
 	std::cout << smallNumber << std::endl;
 	//7. Create a program that creates a small 3x3 array of integers.Use a nested for 
 	//loop to initialise the numbers 1 - 9. Output the numbers in a grid format.
-		int grid[3][3];
-		int upOne = 0;
-		for (int b = 0; b <= 9; b++)
+	int grid[3][3];
+	int row = 0;
+	int column = 0;
+	for (int iter = 1; iter <= 9; iter++)
+	{
+		grid[row][column] = iter;
+		column++;
+		if (iter == 3)
 		{
-			upOne++;
-			grid[upOne][upOne];
+			row++;
+			column = 0;
 		}
+		else if (iter == 6)
+		{
+			row++;
+			column = 0;
+		}
+	}
 	system("pause");
 }
