@@ -12,7 +12,7 @@ int main()
 {
 	float dragonFood[3][7];
 	float mostFoodEaten = dragonFood[0][0];
-	float leastFoodEaten = dragonFood[0][0];
+	float leastFoodEaten;
 	char fatDragon[7];
 	char slimDragon[7];
 	char dragonOne[7] = "Bob\0";
@@ -22,6 +22,8 @@ int main()
 	for (int days = 0; days <= 6; days++)
 	{
 		std::cin >> dragonFood[0][days];
+		if (days == 0)
+		leastFoodEaten = dragonFood[0][0];
 		if (dragonFood[0][days] > mostFoodEaten)
 		{
 			mostFoodEaten = dragonFood[0][days];
