@@ -10,7 +10,7 @@ void QuestionOne()
 }
 void QuestionTwo()
 {
-	int y;
+	int y = 0;
 	if (y == 0)
 		int x = 100;
 }
@@ -25,40 +25,40 @@ void QuestionThree()
 	switch (month)
 	{
 	case 1:
-		std::cout << numDayOne;
+		std::cout << numDayOne << std::endl;
 		break;
 	case 2:
-		std::cout << numDayThree;
+		std::cout << numDayThree << std::endl;
 		break;
 	case 3:
-		std::cout << numDayOne;
+		std::cout << numDayOne << std::endl;
 		break;
 	case 4:
-		std::cout << numDayTwo;
+		std::cout << numDayTwo << std::endl;
 		break;
 	case 5:
-		std::cout << numDayOne;
+		std::cout << numDayOne << std::endl;
 		break;
 	case 6:
-		std::cout << numDayTwo;
+		std::cout << numDayTwo << std::endl;
 		break;
 	case 7:
-		std::cout << numDayOne;
+		std::cout << numDayOne << std::endl;
 		break;
 	case 8:
-		std::cout << numDayOne;
+		std::cout << numDayOne << std::endl;
 		break;
 	case 9:
-		std::cout << numDayTwo;
+		std::cout << numDayTwo << std::endl;
 		break;
 	case 10:
-		std::cout << numDayOne;
+		std::cout << numDayOne << std::endl;
 		break;
 	case 11:
-		std::cout << numDayTwo;
+		std::cout << numDayTwo << std::endl;
 		break;
 	case 12:
-		std::cout << numDayOne;
+		std::cout << numDayOne << std::endl;
 		break;
 	default:
 		std::cout << "Not a month\n";
@@ -101,20 +101,21 @@ void QuestionFour()
 }
 void QuestionFive()
 {
-	int y2;
+	int y2 = 0;
 	int x2;
 	x2 = (y2 == 0) ? 100 : 0;
 }
 void main()
 {
 	std::cout << "What do these conditionals evaluate to\n";
-	void QuestionOne();
+	QuestionOne();
 	std::cout << "Write an if statement that assings 100 to x when y is equal to 0\n";
-	void QuestionTwo();
+	QuestionTwo();
 	std::cout << "Write a switch statement that accepts a number that represents a month and display the number of days in month\n";
-	void QuestionThree();
-	std::cout << "Redo 3 using if statements";
-	void QuestionFour();
-	std::cout << "Convert 2 into a ternary operator";
-	void QuestionFive();
+	QuestionThree();
+	std::cout << "Redo 3 using if statements\n";
+	QuestionFour();
+	std::cout << "Convert 2 into a ternary operator\n";
+	QuestionFive();
+	system("pause");
 }

@@ -1,61 +1,45 @@
 #include <iostream>
-
-int main()
+void QuestionOne()
 {
-	//1. What is the out put of the following code samples?
-	//a. 
-	for (int i = 0; i < 100; i++)
+	//0-99
+	//100, 98, 96, etc until 0 is printed
+	//0, 5, 10, 15, 20
+	//Nothing
+}
+void QuestionTwo()
+{
+	int numA;
+	for (numA = 0; numA <= 100; numA++)
 	{
-		std::cout << i << std::endl;
-	}
-		//0-99
-	//b. 
-	for (int i = 100; i >= 0; i -= 2)
-	{
-		std::cout << i << std::endl;
-	}
-		//100, 98, 96, 94, etc until it prints 0.
-	//c. 
-	int iter = 0;
-	while (iter != 25)
-	{
-		std::cout << iter << std::endl;
-		iter += 5;
-	}
-		//0, 5, 10, 15, 20.
-	//d. 
-	int counter = 0;
-	do
-	{
-		counter++;
-		if (counter == 1)
-			break;
+		int multThree = numA % 3;
+		int multFive = numA % 5;
+		if (multFive == 0 && multThree == 0)
+			std::cout << "fizzbuzz\n";
+		else if (multThree == 0)
+			std::cout << "fizz\n";
+		else if (multFive == 0)
+			std::cout << "buzz\n";
 		else
-			std::cout << counter << std::endl;
-	} while (counter < 10);
-		//Nothing
+			std::cout << numA << std::endl;
+	}
+}
+void QuestionThree()
+{
 
-	//2. Using a for loop, iterate through numbers 0 to 100.
-	//-For multiples of 3 print “Fizz”
-	//- For multiples of 5 print “Buzz”
-	//- For multiples of 3 and 5 print “FizzBuzz”
-	//- Otherwise print the number.
-	//Note, you will need to use the modulus operator (%)
-		int numA;
-		for (numA = 0; numA <= 100; numA++)
-		{
-			int multThree = numA % 3;
-			int multFive = numA % 5;
-			if (multFive == 0 && multThree == 0)
-				std::cout << "fizzbuzz\n";
-			else if (multThree == 0)
-				std::cout << "fizz\n";
-			else if (multFive == 0)
-				std::cout << "buzz\n";
-			else
-				std::cout << numA << std::endl;
-		}
-
+}
+void QuestionFour()
+{
+	for (int evenNum = 98; evenNum > 0; evenNum -= 2)
+		std::cout << evenNum << std::endl;
+}
+void main()
+{
+	std::cout << "What is the output of these code samples?\n";
+	QuestionOne();
+	std::cout << "Using a for loop iterate from 0 to 100, for multiples of 3 print fizz, for 5 print buzz, for 3 and 5 print fizzbuzz, otherwise print\n";
+	QuestionTwo();
+	std::cout << "Repeat 2 using a while and do while loop\n";
+	QuestionThree();
 	//3. Repeat problem 2 using a while loop and a do while loop.
 	//while loop
 		int numB = -1;
@@ -79,10 +63,7 @@ int main()
 			else
 				std::cout << numB << std::endl;
 		} while (numB != 100);
-
-
-	//4. Create a loop that prints all even numbers between 0 and 100, without printing 0 or 100
-		for (int evenNum = 98; evenNum > 0; evenNum -= 2)
-			std::cout << evenNum << std::endl;
+	std::cout << "Create a loop that prints all even numbers between 0 and 100 but not 0 and 100\n";
+	QuestionFour();
 	system("pause");
 }
