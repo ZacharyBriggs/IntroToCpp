@@ -25,7 +25,25 @@ void QuestionTwo()
 }
 void QuestionThree()
 {
-
+	int numB = -1;
+	do
+	{
+		numB++;
+		int multThree = numB % 3;
+		int multFive = numB % 5;
+		if (multThree == 0 && multFive == 0)
+			std::cout << "fizzbuzz\n";
+		else if (multThree == 0)
+		{
+			std::cout << "fizz\n";
+		}
+		else if (multFive == 0)
+		{
+			std::cout << "buzz\n";
+		}
+		else
+			std::cout << numB << std::endl;
+	} while (numB != 100);
 }
 void QuestionFour()
 {
@@ -40,29 +58,6 @@ void main()
 	QuestionTwo();
 	std::cout << "Repeat 2 using a while and do while loop\n";
 	QuestionThree();
-	//3. Repeat problem 2 using a while loop and a do while loop.
-	//while loop
-		int numB = -1;
-		do
-		{
-			numB++;
-			int multThree = numB % 3;
-			int multFive = numB % 5;
-			if (multThree == 0 && multFive == 0)
-				std::cout << "fizzbuzz\n";
-			else if (multThree == 0)
-			{
-				std::cout << "fizz\n";
-				continue;
-			}
-			else if (multFive == 0)
-			{
-				std::cout << "buzz\n";
-				continue;
-			}
-			else
-				std::cout << numB << std::endl;
-		} while (numB != 100);
 	std::cout << "Create a loop that prints all even numbers between 0 and 100 but not 0 and 100\n";
 	QuestionFour();
 	system("pause");

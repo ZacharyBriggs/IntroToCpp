@@ -1,29 +1,25 @@
 #include <iostream>
 int main()
 {
-	int grid[3][3];
-	int row = 0;
-	int column = 0;
-	for (int iter = 1; iter <= 9; iter++)
+	int numB = -1;
+	do
 	{
-		grid[row][column] = iter;
-		std::cout << grid[row][column];
-		column++;
-		if (iter == 3)
+		numB++;
+		int multThree = numB % 3;
+		int multFive = numB % 5;
+		if (multThree == 0 && multFive == 0)
+			std::cout << "fizzbuzz\n";
+		else if (multThree == 0)
 		{
-			row++;
-			column = 0;
-			std::cout << std::endl;
+			std::cout << "fizz\n";
 		}
-		else if (iter == 6)
+		else if (multFive == 0)
 		{
-			row++;
-			column = 0;
-			std::cout << std::endl;
+			std::cout << "buzz\n";
 		}
-		else if (iter == 9)
-			std::cout << std::endl;
-	}
+		else
+			std::cout << numB << std::endl;
+	} while (numB != 100);
 	system("pause");
 }
 
