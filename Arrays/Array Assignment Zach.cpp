@@ -82,6 +82,14 @@ void QuestionSeven()
 			std::cout << std::endl;
 	}
 }
+int Funk(int length,int arrayName[])
+{
+	for (int iter = 0; iter < length; iter++)
+	{
+		int arrayTotal = arrayName[iter] + arrayName[iter + 1];
+		std::cout << arrayName << std::endl;
+	}
+}
 
 void main()
 {
