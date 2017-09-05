@@ -43,7 +43,12 @@ int Divide(int a, int b)
 //3.
 void largeArray(float someArray[], int length)
 {
-
+	int bigNumber = someArray[0];
+	for (int iter = 0; iter < length; iter++)
+	{
+		if (someArray[iter] > bigNumber)
+			bigNumber = someArray[iter];
+	}
 }
 //4
 
