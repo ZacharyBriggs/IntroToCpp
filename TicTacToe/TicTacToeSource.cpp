@@ -1,5 +1,12 @@
+/*
+Create an application that allows to users to play Tic - Tac - Toe.The game
+should be able to played until the users decide to quit by either hitting the X button on
+the window or they should have an on screen prompt in your application that pops up after
+each game.If the user does not exit the game they must have an option to restart the game without
+having to relaunch the application.You must provide a document breaking down the steps taken to
+solve the problem.
+*/
 #include <iostream>
-
 void main()
 {
 	char gameGrid[3][3];
@@ -13,30 +20,6 @@ void main()
 	std::cout << " 7| 8|9\n";
 	std::cout << "P1 choose a space.\n";
 	std::cin >> gridSpace;
-	switch (gridSpace)
-	{
-	case 1:
-		std::cout << " X| 2|3\n";
-		std::cout << "========\n";
-		std::cout << " 4| 5|6\n";
-		std::cout << "========\n";
-		std::cout << " 7| 8|9\n";
-	case 2:
-		std::cout << " 1| X|3\n";
-		std::cout << "========\n";
-		std::cout << " 4| 5|6\n";
-		std::cout << "========\n";
-		std::cout << " 7| 8|9\n";
-	case 3:
-	case 4:
-	case 5:
-	case 6:
-	case 7:
-	case 8:
-	case 9:
-	default:
-		std::cout << "Not a valid space.\n";
-	}
-	
 	system("pause");
+	}	
 }

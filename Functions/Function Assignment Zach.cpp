@@ -55,6 +55,14 @@ void largeArray(float someArray[], int length)
 //1, 1, 2, 3, 5, 8, etc.
 
 //5
+
+//3. Create a function that takes in two arguments, one beign an array of float and the other
+//being the size of the array. It must return the largest value in the array.
+//4. Using recursion write a function that prints out the Fibonacci sequence.
+//5. The following statement calls a function named Half. The Half function returns a value that 
+//is half that of the argument. Write the function.
+//6. Write a function that takes as its parameters an array of integers and the size of the array 
+// and returns the sum of the values in the array.
 void main()
 {
 	std::cout << Add(1, 2) << std::endl;
