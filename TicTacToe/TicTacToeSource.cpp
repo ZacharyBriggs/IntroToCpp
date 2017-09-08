@@ -29,7 +29,17 @@ void main()
 		std::cout << "P1 choose a space.\n";
 		std::cin >> gridSpace;
 		if (gridSpace == 1)
-			space1 = 'X';
+		{
+			if (space1 == 'O' || space1 == 'X')
+			{
+				std::cout << "Spot already taken.\n";
+				break;
+			}
+			else if (space1 != 'O' || space1 != 'X');
+			{
+				space1 = 'X';
+			}
+		}
 		else if (gridSpace == 2)
 			space2 = 'X';
 		else if (gridSpace == 3)
@@ -54,7 +64,17 @@ void main()
 		std::cout << "P2 choose a space.\n";
 		std::cin >> gridSpace;
 		if (gridSpace == 1)
+		{ 
+		if (space1 == 'O' || space1 == 'X')
+		{
+			std::cout << "Spot already taken.\n";
+			break;
+		}
+		else if (space1 != 'O' || space1 != 'X');
+		{
 			space1 = 'O';
+		}
+		}
 		else if (gridSpace == 2)
 			space2 = 'O';
 		else if (gridSpace == 3)
