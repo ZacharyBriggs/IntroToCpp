@@ -20,6 +20,7 @@ char space9;
 void Player1();
 void Player2();
 void Board();
+void WinConditionP1();
 void main()
 {
 	char gameGrid[3][3];
@@ -304,4 +305,16 @@ void Board()
 	std::cout << " " << space4 << "|" << space5 << "|" << space6 << "\n";
 	std::cout << "========\n";
 	std::cout << " " << space7 << "|" << space8 << "|" << space9 << "\n";
+}
+void WinConditionP1()
+{
+	if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
+	std::cout << "P1 wins!\n";
 }
