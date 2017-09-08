@@ -7,19 +7,52 @@ having to relaunch the application.You must provide a document breaking down the
 solve the problem.
 */
 #include <iostream>
+char space1;
+char space2;
+char space3;
+char space4;
+char space5;
+char space6;
+char space7;
+char space8;
+char space9;
+void Board();
 void main()
 {
 	char gameGrid[3][3];
-	char player1 = 'X';
-	char player2 = 'O';
 	int gridSpace;
-	std::cout << " 1| 2|3\n";
-	std::cout << "========\n";
-	std::cout << " 4| 5|6\n";
-	std::cout << "========\n";
-	std::cout << " 7| 8|9\n";
 	std::cout << "P1 choose a space.\n";
 	std::cin >> gridSpace;
+	if (gridSpace == 1)
+		space1 = 'X';
+	else if (gridSpace == 2)
+		space2 = 'X';
+	else if (gridSpace == 3)
+		space3 = 'X';
+	else if (gridSpace == 4)
+		space4 = 'X';
+	else if (gridSpace == 5)
+		space5 = 'X';
+	else if (gridSpace == 6)
+		space6 = 'X';
+	else if (gridSpace == 7)
+		space7 = 'X';
+	else if (gridSpace == 8)
+		space8 = 'X';
+	else if (gridSpace == 9)
+		space9 = 'X';
+	else
+	{
+		std::cout << "Not a valid space.\n";
+	}
+	Board();
 	system("pause");
-	}	
+}	
+void Board()
+{
+	std::cout << " " << space1 << "|" << space2 << "|" << space3 << " \n";
+	std::cout << "========\n";
+	std::cout << " " << space4 << "|" << space5 << "|" << space6 << "\n";
+	std::cout << "========\n";
+	std::cout << " " << space7 << "|" << space8 << "|" << space9 << "\n";
 }
