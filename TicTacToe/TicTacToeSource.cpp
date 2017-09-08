@@ -21,31 +21,62 @@ void main()
 {
 	char gameGrid[3][3];
 	int gridSpace;
-	std::cout << "P1 choose a space.\n";
-	std::cin >> gridSpace;
-	if (gridSpace == 1)
-		space1 = 'X';
-	else if (gridSpace == 2)
-		space2 = 'X';
-	else if (gridSpace == 3)
-		space3 = 'X';
-	else if (gridSpace == 4)
-		space4 = 'X';
-	else if (gridSpace == 5)
-		space5 = 'X';
-	else if (gridSpace == 6)
-		space6 = 'X';
-	else if (gridSpace == 7)
-		space7 = 'X';
-	else if (gridSpace == 8)
-		space8 = 'X';
-	else if (gridSpace == 9)
-		space9 = 'X';
-	else
+	bool gameOver = false;
+	while (gameOver == false)
 	{
-		std::cout << "Not a valid space.\n";
+		char gameGrid[3][3];
+		int gridSpace;
+		std::cout << "P1 choose a space.\n";
+		std::cin >> gridSpace;
+		if (gridSpace == 1)
+			space1 = 'X';
+		else if (gridSpace == 2)
+			space2 = 'X';
+		else if (gridSpace == 3)
+			space3 = 'X';
+		else if (gridSpace == 4)
+			space4 = 'X';
+		else if (gridSpace == 5)
+			space5 = 'X';
+		else if (gridSpace == 6)
+			space6 = 'X';
+		else if (gridSpace == 7)
+			space7 = 'X';
+		else if (gridSpace == 8)
+			space8 = 'X';
+		else if (gridSpace == 9)
+			space9 = 'X';
+		else
+		{
+			std::cout << "Not a valid space.\n";
+		}
+		Board();
+		std::cout << "P2 choose a space.\n";
+		std::cin >> gridSpace;
+		if (gridSpace == 1)
+			space1 = 'O';
+		else if (gridSpace == 2)
+			space2 = 'O';
+		else if (gridSpace == 3)
+			space3 = 'O';
+		else if (gridSpace == 4)
+			space4 = 'O';
+		else if (gridSpace == 5)
+			space5 = 'O';
+		else if (gridSpace == 6)
+			space6 = 'O';
+		else if (gridSpace == 7)
+			space7 = 'O';
+		else if (gridSpace == 8)
+			space8 = 'O';
+		else if (gridSpace == 9)
+			space9 = 'O';
+		else
+		{
+			std::cout << "Not a valid space.\n";
+		}
+		Board();
 	}
-	Board();
 	system("pause");
 }	
 void Board()
