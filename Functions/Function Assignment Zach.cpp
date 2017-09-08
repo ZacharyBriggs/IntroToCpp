@@ -1,12 +1,12 @@
 #include <iostream>
 void questionOne();
-int QuestionTwoAdd();
-int QuestionTwoSubtract();
-int QuestionTwoMult();
-int QuestionTwoDivide();
-void QuestionThree();
+int QuestionTwoAdd(int a, int b);
+int QuestionTwoSubtract(int a, int b);
+int QuestionTwoMult(int a, int b);
+int QuestionTwoDivide(int a, int b);
+float QuestionThree(float someArray[], int length);
 void QuestionFour();
-void QuestionFive();
+float QuestionFiveHalf(int a);
 void QuestionSix();
 void main()
 {
@@ -16,10 +16,10 @@ void main()
 	std::cout << QuestionTwoMult(2, 2) << std::endl;
 	std::cout << QuestionTwoDivide(6, 2) << std::endl;
 	std::cout << "Question 3\n";
-	float myArray[5];
-	std::cout << QuestionThree(myArray[], 5)
+	float myArray[] = { 1,2,3,4,5 };
+	std::cout << QuestionThree(myArray, 5);
 	std::cout << "Question 5\n";
-	std::cout << Half(5) << std::endl;
+	std::cout << QuestionFiveHalf(5) << std::endl;
 }
 //2.
 int QuestionTwoAdd(int a, int b)
@@ -39,7 +39,7 @@ int QuestionTwoDivide(int a, int b)
 	return a / b;
 }
 //3.
-void QuestionThree(float someArray[], int length)
+float QuestionThree(float someArray[], int length)
 {
 	int bigNumber = someArray[0];
 	for (int iter = 0; iter < length; iter++)
@@ -53,7 +53,7 @@ void QuestionThree(float someArray[], int length)
 //1, 1, 2, 3, 5, 8, etc.
 
 //5
-float Half(int a)
+float QuestionFiveHalf(int a)
 {
 	return a / 2;
 }
