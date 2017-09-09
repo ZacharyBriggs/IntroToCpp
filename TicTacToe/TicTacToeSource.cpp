@@ -22,9 +22,10 @@ char endGame;
 void Player1();
 void Player2();
 void Board();
-void PlayAgain();
 void WinConditionP1();
 void WinConditionP2();
+void CatCheck();
+void PlayAgain();
 void main()
 {
 	char gameGrid[3][3];
@@ -36,8 +37,14 @@ void main()
 		WinConditionP1();
 		if (gameOver == true)
 			break;
+		CatCheck();
+		if (gameOver == true)
+			break;
 		Player2();
 		WinConditionP2();
+		if (gameOver == true)
+			break;
+		CatCheck();
 		if (gameOver == true)
 			break;
 	}
@@ -397,6 +404,14 @@ void WinConditionP2()
 	else if (space7 == 'O' && space8 == 'O' && space9 == 'O')
 	{
 		std::cout << "P2 wins!\n";
+		PlayAgain();
+	}
+}
+void CatCheck()
+{
+	if ((space1 == 'X' ||space1 == 'O') && (space2 == 'X' || space2 == 'O') && (space3 == 'X' || space3 == 'O') && (space4 == 'X' || space4 == 'O') && (space5 == 'X' || space5 == 'O') && (space6 == 'X' || space6 == 'O') && (space7 == 'X' || space7 == 'O') && (space8 == 'X' || space8 == 'O') && (space9 == 'X' || space9 == 'O'))
+	{
+		std::cout << "Cat!\n";
 		PlayAgain();
 	}
 }
