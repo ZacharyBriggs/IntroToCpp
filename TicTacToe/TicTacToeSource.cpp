@@ -8,6 +8,7 @@ solve the problem.
 */
 #include <iostream>
 int gridSpace;
+bool gameOver = false;
 char space1;
 char space2;
 char space3;
@@ -17,6 +18,7 @@ char space6;
 char space7;
 char space8;
 char space9;
+char endGame;
 void Player1();
 void Player2();
 void Board();
@@ -26,17 +28,19 @@ void WinConditionP2();
 void main()
 {
 	char gameGrid[3][3];
-	bool gameOver = false;
 	while (gameOver == false)
 	{
 		char gameGrid[3][3];
 		int gridSpace;
 		Player1();
 		WinConditionP1();
+		if (gameOver == true)
+			break;
 		Player2();
 		WinConditionP2();
+		if (gameOver == true)
+			break;
 	}
-	system("pause");
 }	
 void Player1()
 {
@@ -398,7 +402,6 @@ void WinConditionP2()
 }
 void PlayAgain()
 {
-	char endGame;
 	bool playAgainCheck = true;
 	while (playAgainCheck == true)
 	{
@@ -407,12 +410,22 @@ void PlayAgain()
 		if (endGame == 'y')
 		{
 			std::cout << "Restarting...\n";
-
+			space1 = 0;
+			space2 = 0;
+			space3 = 0;
+			space4 = 0;
+			space5 = 0;
+			space6 = 0;
+			space7 = 0;
+			space8 = 0;
+			space9 = 0;
+			main();
 		}
 		else if (endGame == 'n')
 		{
-			std::cout << "Good-Bye!";
-			break;
+			std::cout << "Good-Bye!\n";
+			gameOver = true;
+			playAgainCheck = false;
 		}
 		else
 		{
