@@ -20,7 +20,9 @@ char space9;
 void Player1();
 void Player2();
 void Board();
+void PlayAgain();
 void WinConditionP1();
+void WinConditionP2();
 void main()
 {
 	char gameGrid[3][3];
@@ -30,7 +32,9 @@ void main()
 		char gameGrid[3][3];
 		int gridSpace;
 		Player1();
+		WinConditionP1();
 		Player2();
+		WinConditionP2();
 	}
 	system("pause");
 }	
@@ -309,12 +313,90 @@ void Board()
 void WinConditionP1()
 {
 	if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	else if (space1 = 'X' && space2 == 'X' && space3 == 'X')
-	std::cout << "P1 wins!\n";
+	{
+		std::cout << "P1 wins!\n";
+
+	}
+	else if (space4 = 'X' && space5 == 'X' && space6 == 'X')
+	{
+		std::cout << "P1 wins!\n";
+	}
+	else if (space1 = 'X' && space4 == 'X' && space7 == 'X')
+	{
+		std::cout << "P1 wins!\n";
+	}
+	else if (space1 = 'X' && space5 == 'X' && space9 == 'X')
+	{
+		std::cout << "P1 wins!\n";
+	}
+	else if (space2 = 'X' && space5 == 'X' && space8 == 'X')
+	{
+		std::cout << "P1 wins!\n";
+	}
+	else if (space3 = 'X' && space6 == 'X' && space9 == 'X')
+	{
+		std::cout << "P1 wins!\n";
+	}
+	else if (space3 = 'X' && space5 == 'X' && space7 == 'X')
+	{
+		std::cout << "P1 wins!\n";
+	}
+	else if (space7 = 'X' && space8 == 'X' && space9 == 'X')
+	{
+		std::cout << "P1 wins!\n";
+	}
+	PlayAgain();
+}
+void WinConditionP2()
+{
+	if (space1 = 'O' && space2 == 'O' && space3 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+
+	}
+	else if (space4 = 'O' && space5 == 'O' && space6 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+	}
+	else if (space1 = 'O' && space4 == 'O' && space7 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+	}
+	else if (space1 = 'O' && space5 == 'O' && space9 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+	}
+	else if (space2 = 'O' && space5 == 'O' && space8 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+	}
+	else if (space3 = 'O' && space6 == 'O' && space9 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+	}
+	else if (space3 = 'O' && space5 == 'O' && space7 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+	}
+	else if (space7 = 'O' && space8 == 'O' && space9 == 'O')
+	{
+		std::cout << "P2 wins!\n";
+	}
+	PlayAgain();
+}
+void PlayAgain()
+{
+	char endGame;
+	std::cout << "Do you want to play again? Y/N\n";
+	std::cin >> endGame;
+	if (endGame == 'y')
+	{
+		std::cout << "Restarting...\n";
+		continue;
+	}
+	else if (endGame == 'n')
+	{
+		std::cout << "Good-Bye!";
+		break;
+	}
 }
