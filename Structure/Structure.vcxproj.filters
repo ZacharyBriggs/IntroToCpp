@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Struct_fun.cpp">
+    <ClCompile Include="Struct_assignment_zach.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
