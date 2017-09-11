@@ -20,6 +20,5 @@ void main()
 	std::cout << " 7| 8|9\n";
 	std::cout << "P1 choose a space.\n";
 	std::cin >> gridSpace;
-	system("pause");
-	}	
+	system("pause");	
 }

@@ -302,3 +302,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 Tester/Test.cpp
+TicTacToe/TicTacToeSource.cpp
