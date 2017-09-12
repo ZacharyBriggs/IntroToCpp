@@ -1,5 +1,34 @@
 #include <iostream>
-//Modify your answer to allow the user to search for vehicles by year,name, and maker. 
+//Create an application that allows the user to create students and assign them to an array.
+struct Student
+{
+	char mName[255];
+	int mAge;
+};
+Student CreateStudent();
+int main()
+{
+	Student aieClass[7];
+	for (int i = 0; i < 7; i++)
+	{	
+		aieClass[i] = CreateStudent();
+		system("cls");
+		std::cout << "Name is: " << aieClass[i].mName << std::endl;
+		std::cout << "Age is : " << aieClass[i].mAge << std::endl;
+		system("pause");
+		system("cls");
+	}
+}
+Student CreateStudent()
+{
+	Student newStudent = {};
+	std::cout << "Input name.\n";
+	std::cin >> newStudent.mName;
+	std::cout << "Input age.\n";
+	std::cin >> newStudent.mAge;
+	return newStudent;
+}
+/*
 struct Item
 {
 	char mName[255];
@@ -33,7 +62,9 @@ void PrintShopInv(Shop shopData)
 		std::cout << "Quantity : " << shopData.mItems[i].mQuantity << std::endl;
 	}
 }
+*/
 /*
+//Modify your answer to allow the user to search for vehicles by year,name, and maker.
 struct Vehicle
 {
 	int mNumTires;
