@@ -1,6 +1,21 @@
 #include <iostream>
 #include "Player.h"
+#include "Point2D.h"
+int main()
+{
+	Point2D testOne;
+	Point2D testTwo(5.0f, 5.5f);
+	Point2D testThree = testOne.Add(testTwo);
+	Point2D testFour = testThree.Add(testTwo);
 
+	Player playerOne;
+	Player playerTwo(testTwo,"Zach");
+	Player playerThree(Point2D(1, 5), "Bob");
+
+	system("pause");
+}
+
+/*
 int main()
 {
 	Player zach;
@@ -13,3 +28,4 @@ int main()
 	zach.ModifyLevel(1);
 	system("pause");
 }
+*/

@@ -1,5 +1,6 @@
 #include<iostream>
 #include "Vehicle.h"
+/*
 int main()
 {
 	Vehicle classCars[7];
@@ -12,3 +13,4 @@ int main()
 	}
 	system("pause");
 }
+*/
