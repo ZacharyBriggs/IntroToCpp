@@ -12,6 +12,7 @@ int main()
 	Player playerTwo(testTwo,"Zach");
 	Player playerThree(Point2D(1, 5), "Bob");
 	bool testLevel = playerOne.LevelUp();
+	playerOne.MovePlayer(testTwo);
 
 	system("pause");
 }

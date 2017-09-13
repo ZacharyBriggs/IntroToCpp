@@ -14,7 +14,7 @@ Player::Player(Point2D pos, char name[255])
 }
 void Player::MovePlayer(Point2D move)
 {
-	move.Add(posXY)
+	mPos = mPos.Add(move);
 }
 bool Player::LevelUp()
 {
