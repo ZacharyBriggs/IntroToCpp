@@ -8,5 +8,6 @@ private:
 public:
 	Zombie();
 	Zombie(int hp, int atk, char name[255]);
-	void ZomFight(Zombie zom1, Zombie zom2);
+	void ZomFight(Zombie zom);
+	void ZomFightTwo(Zombie zom);
 };

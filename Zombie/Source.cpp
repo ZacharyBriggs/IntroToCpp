@@ -9,6 +9,9 @@ int main()
 {
 	Zombie ZombOne;
 	Zombie ZombTwo(25, 75, "speedy");
+
+	ZombOne.ZomFight(ZombTwo);
+	ZombOne.ZomFightTwo(ZombTwo);
 	
 	system("pause");
 }
