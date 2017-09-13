@@ -91,10 +91,6 @@ void QuestionThree(float someArray[], int length)
 	}
 	std::cout << bigNumber << std::endl;
 }
-void QuestionFour();
-{
-
-}
 //4
 
 //1, 1, 2, 3, 5, 8, etc.

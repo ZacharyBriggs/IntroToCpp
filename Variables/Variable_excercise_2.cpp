@@ -1,10 +1,10 @@
 #include <iostream>
 void QuestionOne()
 {
-	int height;
-	float taxOver65K;
-	float taxUnder5K;
-	float steamLibTotal;
+	int height = 0;
+	float taxOver65K = 0;
+	float taxUnder5K = 0;
+	float steamLibTotal = 0;
 }
 void QuestionTwo()
 {
