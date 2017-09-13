@@ -12,6 +12,21 @@ Player::Player(Point2D pos, char name[255])
 	strcpy_s(mName, name);
 	mLevel = 1;
 }
+void Player::MovePlayer(Point2D move)
+{
+}
+bool Player::LevelUp()
+{
+	int levelCap = 110;
+	if (mLevel < levelCap)
+	{
+		mLevel++;
+		std::cout << "Level Up!";
+		return true;
+	}
+	else
+		return false;
+}
 /*
 #include "Player.h"
 void Player::TakeDamage(int damAmount)
