@@ -1,10 +1,10 @@
 #include <iostream>
 void QuestionOne()
 {
-	int heightStudents[10];
+	/*int heightStudents[10];
 	int ageParents[25];
 	bool trueFalseQuestions[10];
-	char alphabet[26];
+	char alphabet[26];*/
 }
 void QuestionTwo()
 {
@@ -82,14 +82,14 @@ void QuestionSeven()
 			std::cout << std::endl;
 	}
 }
-int Funk(int length,int arrayName[])
-{
-	for (int iter = 0; iter < length; iter++)
-	{
-		int arrayTotal = arrayName[iter] + arrayName[iter + 1];
-		std::cout << arrayName << std::endl;
-	}
-}
+//int Funk(int length,int arrayName[])
+//{
+//	for (int iter = 0; iter < length; iter++)
+//	{
+//		int arrayTotal = arrayName[iter] + arrayName[iter + 1];
+//		std::cout << arrayName << std::endl;
+//	}
+//}
 
 void main()
 {
