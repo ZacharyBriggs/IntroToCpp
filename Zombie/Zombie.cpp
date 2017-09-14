@@ -15,13 +15,8 @@ Zombie::Zombie(int hp, int atk, char name[255])
 	strcpy_s(mName, name);
 }
 
-void Zombie::ZomFight(Zombie zom)
-{
-	mHP -= zom.mAtk;	
-	return;
-}
-
-void Zombie::ZomFightTwo(Zombie zom)
-{
-	mHP -= zom.mAtk;
-}
+//void Zombie::ZomFight()
+//{
+//	zom2.mHP -= zom1.mAtk;
+//	zom1.mHP -= zom2.mAtk;
+//}
