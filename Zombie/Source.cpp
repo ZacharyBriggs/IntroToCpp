@@ -11,10 +11,9 @@
 int main()
 {
 	srand(time(NULL));
-	int numOfZoms;
-	std::cin >> numOfZoms;
-	Zombie zomArray[numOfZoms];
-	while(zomArray[].mHP < 0)
+	bool zombie = true;
+	Zombie zomArray[5];
+	while (zombie == true)
 	{
 		zomArray[rand() % 5].ZomFight(zomArray[rand() % 5]);
 	}
