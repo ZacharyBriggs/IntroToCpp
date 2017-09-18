@@ -6,6 +6,7 @@ Zombie::Zombie()
 	mHP = rand()%1000;
 	mAtk = rand()%1000;
 	strcpy_s(mName, "Default");
+	/*mZomAlive = true;*/
 }
 
 Zombie::Zombie(int hp, int atk, char name[255])
@@ -13,6 +14,7 @@ Zombie::Zombie(int hp, int atk, char name[255])
 	mHP = hp;
 	mAtk = atk;
 	strcpy_s(mName, name);
+	/*mZomAlive = true;*/
 }
 void Zombie::ZomFight(Zombie zom)
 {
@@ -22,3 +24,4 @@ void Zombie::ZomFight(Zombie zom)
 		mHP = 0;
 	}
 }
+
