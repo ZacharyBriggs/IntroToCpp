@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWorld", "HelloWorld\HelloWorld.vcxproj", "{40854740-5671-476A-B9AF-5085A1BB27AF}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Carz", "Carz\Carz.vcxproj", "{C91CEB0A-FD4B-4E07-87C3-4A662555B926}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zombie", "Zombie\Zombie.vcxproj", "{3CFE5711-DF90-4AE8-A34E-218FB03763A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClassesPractice", "ClassesPractice\ClassesPractice.vcxproj", "{60672065-5BB9-4D42-8EBA-B3F6881C6444}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,14 @@ Global
 		{3CFE5711-DF90-4AE8-A34E-218FB03763A2}.Release|x64.Build.0 = Release|x64
 		{3CFE5711-DF90-4AE8-A34E-218FB03763A2}.Release|x86.ActiveCfg = Release|Win32
 		{3CFE5711-DF90-4AE8-A34E-218FB03763A2}.Release|x86.Build.0 = Release|Win32
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Debug|x64.ActiveCfg = Debug|x64
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Debug|x64.Build.0 = Debug|x64
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Debug|x86.ActiveCfg = Debug|Win32
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Debug|x86.Build.0 = Debug|Win32
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Release|x64.ActiveCfg = Release|x64
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Release|x64.Build.0 = Release|x64
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Release|x86.ActiveCfg = Release|Win32
+		{60672065-5BB9-4D42-8EBA-B3F6881C6444}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

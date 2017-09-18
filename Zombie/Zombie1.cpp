@@ -8,7 +8,6 @@ Zombie::Zombie()
 	strcpy_s(mName, "Default");
 	/*mZomAlive = true;*/
 }
-
 Zombie::Zombie(int hp, int atk, char name[255])
 {
 	mHP = hp;
