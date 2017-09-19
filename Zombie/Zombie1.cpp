@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Zombie.h"
+#include "Zombie1.h"
 
 Zombie::Zombie()
 {

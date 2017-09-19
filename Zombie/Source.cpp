@@ -6,7 +6,7 @@
 #include <iostream>
 #include <stdlib.h> 
 #include <time.h>
-#include "Zombie.h"
+#include "Zombie1.h"
 int main()
 {
 	srand(time(NULL));
