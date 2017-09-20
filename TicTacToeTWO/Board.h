@@ -15,22 +15,20 @@ public:
 			board[i] = 32;//assigns values to the board
 		}
 	}
-
 	~Board()
 	{
 		delete board; //frees me3mory allocated for the board
 	}
-
 	void chooseSpace(int &space, char piece)
 	{
-		if (board[space] == 'X' || board[space] == 'O' || space > 8)
+		if (board[space-1] == 'X' || board[space-1] == 'O' || space-1 > 8 || space-1 < 0)
 		{
 			std::cout << "Invalid choice pick a new space.\n";
 			std::cin >> space;
 			chooseSpace(space, piece);
 		}
 		else 
-			board[space] = piece;
+			board[space-1] = piece;
 		
 	}
 	void displayBoard()
@@ -52,5 +50,9 @@ public:
 			for (int i = 0; i < this->numSpaces; i++)
 				board[i] = 32;
 		}
+	}
+	void winCondition()
+	{
+		
 	}
 };

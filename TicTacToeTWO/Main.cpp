@@ -13,6 +13,7 @@ int main()
 		std::cin >> space;
 		game->chooseSpace(space, playerPiece);
 		changePiece(&playerPiece);
+
 		
 	}
 	system("pause");
