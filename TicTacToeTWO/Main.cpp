@@ -2,7 +2,7 @@
 void changePiece(char *piece);
 int main()
 {
-	Board *game = new Board(9);
+	Board *game = new Board(3,3);
 	bool gameRunning = true;
 	char playerPiece = 'X';
 	while (gameRunning == true)

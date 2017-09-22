@@ -1,25 +1,25 @@
 #include "Board.h"
 
-Board::Board(int size)
+Board::Board(int rows,int cols)
 {
 	{
-		board = new char[size]; //allocates new memory for the char array.
-		this->numSpaces = size;
-		for (int i = 0; i < size; i++)
+		board = new char[rows+cols]; //allocates new memory for the char array.
+		this->numSpaces = rows*cols;
+		this->numRows = rows;
+		this->numCols = cols;
+		for (int i = 0; i < numSpaces; i++)
 		{
 			board[i] = 32;//assigns values to the board
 		}
 	}
 }
-
 Board::~Board()
 {
 	{
 		delete board; //frees me3mory allocated for the board
 	}
 }
-
-void Board::chooseSpace(int & space, char piece)
+void Board::chooseSpace(int &space, char piece)
 {
 	if (board[space - 1] == 'X' || board[space - 1] == 'O' || space - 1 > 8 || space - 1 < 0)
 	{
@@ -31,7 +31,6 @@ void Board::chooseSpace(int & space, char piece)
 		board[space - 1] = piece;
 
 }
-
 void Board::displayBoard()
 {
 	for (int i = 0; i < this->numSpaces; i++)
@@ -45,7 +44,6 @@ void Board::displayBoard()
 			std::cout << std::endl;
 	}
 }
-
 void Board::ClearBoard()
 {
 	{
@@ -53,7 +51,14 @@ void Board::ClearBoard()
 			board[i] = 32;
 	}
 }
-
 void Board::winCondition()
 {
+	for (int i = 0; i < numRows; i++)
+	{
+
+	}
+	for (int j = 0; j < numCols; j++)
+	{
+
+	}
 }
