@@ -13,5 +13,5 @@ public:
 	void chooseSpace(int &space, char piece);
 	void displayBoard();
 	void ClearBoard();
-	void winCondition();
+	void winCondition(char piece);
 };

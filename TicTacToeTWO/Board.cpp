@@ -51,14 +51,35 @@ void Board::ClearBoard()
 			board[i] = 32;
 	}
 }
-void Board::winCondition()
+void Board::winCondition(char piece)
 {
-	for (int i = 0; i < numRows; i++)
+	for (int i = 0; i < numCols; i++)
 	{
-
-	}
-	for (int j = 0; j < numCols; j++)
-	{
-
+		//Checks rows
+		if (this->board[i] == 32)
+			continue;
+		if (this->board[i] == this->board[i + 3])
+		{
+			if (this->board[i] == this->board[i + 6] && this->board[i + 3] == this->board[i + 6])
+			{
+				std::cout << piece << " wins!" << std::endl;
+			}
+		}
+		//Checks cols
+		if (this->board[i] == this->board[i + 1])
+		{
+			if (this->board[i] == this->board[i + 2] && this->board[i + 1] == this->board[i + 2])
+			{
+				std::cout << piece << " wins!" << std::endl;
+			}
+		}
+		//Checks diagnols
+		if (this->board[i] == this->board[i + 4])
+		{
+			if (this->board[i] == this->board[i + 8] && this->board[i + 4] == this->board[i + 8])
+			{
+				std::cout << piece << " wins!" << std::endl;
+			}
+		}
 	}
 }

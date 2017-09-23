@@ -12,9 +12,8 @@ int main()
 		std::cout << "Input a space.\n";
 		std::cin >> space;
 		game->chooseSpace(space, playerPiece);
+		game->winCondition(playerPiece);
 		changePiece(&playerPiece);
-
-		
 	}
 	system("pause");
 }
