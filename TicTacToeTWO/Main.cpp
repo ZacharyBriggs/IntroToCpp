@@ -12,9 +12,10 @@ int main()
 		std::cout << "Input a space.\n";
 		std::cin >> space;
 		game->chooseSpace(space, playerPiece);
-		game->winCondition(playerPiece);
+		game->winCondition(playerPiece, gameRunning);
 		changePiece(&playerPiece);
 	}
+	std::cout << "Game Over\n";
 	system("pause");
 }
 void changePiece(char *piece)
