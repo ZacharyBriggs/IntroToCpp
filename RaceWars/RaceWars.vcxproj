@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0A6BF634-8D24-40C7-97E3-FFD5CE180E96}</ProjectGuid>
-    <RootNamespace>Classes</RootNamespace>
+    <ProjectGuid>{95E91A54-3A4B-4BEB-A9FF-29287186DB3A}</ProjectGuid>
+    <RootNamespace>RaceWars</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,12 +110,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Player2.h" />
-    <ClInclude Include="Point2D2.h" />
+    <ClInclude Include="Dungeon.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Point2D.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Point2D2.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Dungeon.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Point2D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
