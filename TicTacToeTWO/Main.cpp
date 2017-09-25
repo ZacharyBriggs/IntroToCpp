@@ -13,10 +13,14 @@ int main()
 		std::cout << "Input a space.\n";
 		std::cin >> space;
 		game->chooseSpace(space, playerPiece);
-		game->winCondition(playerPiece, gameRunning);
+		game->winCondition(playerPiece);
 		changePiece(&playerPiece);
 	}
+<<<<<<< HEAD
 	playAgain();
+=======
+	system("pause");
+>>>>>>> parent of d592124... winning will end the game
 }
 void changePiece(char *piece)
 {

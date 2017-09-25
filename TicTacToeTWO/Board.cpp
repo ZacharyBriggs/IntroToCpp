@@ -49,25 +49,35 @@ void Board::ClearBoard()
 			board[i] = 32;
 	}
 }
-void Board::winCondition(char piece, bool &gameRunning)
+void Board::winCondition(char piece)
 {
 	for (int i = 0; i < numSpaces; i++)
 	{
 		//Checks cols
 		if (this->board[i] == 32)
 			continue;
-		if (this->board[i] == this->board[i + 6] && this->board[i + 3] == this->board[i + 6])
+		if (this->board[i] == this->board[i + 3])
 		{
-			std::cout << piece << " wins!" << std::endl;
-			gameRunning = false;
+			if (this->board[i] == this->board[i + 6] && this->board[i + 3] == this->board[i + 6])
+			{
+				std::cout << piece << " wins!" << std::endl;
+			}
 		}
+<<<<<<< HEAD
 		//Checks rows
 		if (this->board[i] == this->board[i + 1] && this->board[i + 1] == this->board[i + 2])
+=======
+		//Checks cols
+		if (this->board[i] == this->board[i + 1])
+>>>>>>> parent of d592124... winning will end the game
 		{
-			std::cout << piece << " wins!" << std::endl;
-			gameRunning = false;
+			if (this->board[i] == this->board[i + 2] && this->board[i + 1] == this->board[i + 2])
+			{
+				std::cout << piece << " wins!" << std::endl;
+			}
 		}
 		//Checks diagnols
+<<<<<<< HEAD
 		if (this->board[i] == this->board[i+3] && this->board[i+3] == this->board[i+8])
 		{
 			std::cout << piece << " wins!" << std::endl;
@@ -77,6 +87,14 @@ void Board::winCondition(char piece, bool &gameRunning)
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
+=======
+		if (this->board[i] == this->board[i + 4])
+		{
+			if (this->board[i] == this->board[i + 8] && this->board[i + 4] == this->board[i + 8])
+			{
+				std::cout << piece << " wins!" << std::endl;
+			}
+>>>>>>> parent of d592124... winning will end the game
 		}
 	}
 }
