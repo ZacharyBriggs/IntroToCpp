@@ -49,11 +49,22 @@ void Board::ClearBoard()
 			board[i] = 32;
 	}
 }
-void Board::winCondition(char piece,bool &gameRunning)
+void Board::winCondition(char piece, bool &gameRunning)
 {
+	//Checks rows
+	for (int i = 0; i < 8; i += 3)
+	{
+		if (this->board[i] == 32)
+			continue;
+		if (this->board[i] == this->board[i + 2] && this->board[i + 1] == this->board[i + 2])
+		{
+			std::cout << piece << " wins!" << std::endl;
+			gameRunning = false;
+		}
+	}
+	//Checks cols
 	for (int i = 0; i < 3; i++)
 	{
-		//Checks cols
 		if (this->board[i] == 32)
 			continue;
 		if (this->board[i] == this->board[i + 6] && this->board[i + 3] == this->board[i + 6])
@@ -61,13 +72,11 @@ void Board::winCondition(char piece,bool &gameRunning)
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
 		}
-		//Checks cols
-		if (this->board[i] == this->board[i + 2] && this->board[i + 1] == this->board[i + 2])
-		{
-			std::cout << piece << " wins!" << std::endl;
-			gameRunning = false;
-		}
+	}
 		//Checks diagnols
+	for (int i = 0; i < 1; i++)
+	{
+		if(this->board[i] == 32)
 		if (this->board[i] == this->board[i + 3] && this->board[i + 3] == this->board[i + 8])
 		{
 			std::cout << piece << " wins!" << std::endl;
