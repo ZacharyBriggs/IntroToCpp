@@ -1,5 +1,6 @@
 #include "Board.h"
 void changePiece(char *piece);
+void playAgain();
 int main()
 {
 	Board *game = new Board(3,3);
@@ -15,10 +16,18 @@ int main()
 		game->winCondition(playerPiece, gameRunning);
 		changePiece(&playerPiece);
 	}
-	std::cout << "Game Over\n";
-	system("pause");
+	playAgain();
 }
 void changePiece(char *piece)
 {
 	*piece = (*piece == 'X') ? 'O' : 'X';
+}
+void playAgain()
+{
+	char yesNo;
+	std::cout << "Play again? Y/N\n";
+	std::cin >> yesNo;
+	if (yesNo == 'y' || yesNo == 'Y')
+		main();
+
 }

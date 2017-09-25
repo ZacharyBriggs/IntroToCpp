@@ -5,8 +5,6 @@ Board::Board(int rows,int cols)
 	{
 		board = new char[rows+cols]; //allocates new memory for the char array.
 		this->numSpaces = rows*cols;
-		this->numRows = rows;
-		this->numCols = cols;
 		for (int i = 0; i < numSpaces; i++)
 		{
 			board[i] = 32;//assigns values to the board
@@ -53,9 +51,9 @@ void Board::ClearBoard()
 }
 void Board::winCondition(char piece, bool &gameRunning)
 {
-	for (int i = 0; i < numCols; i++)
+	for (int i = 0; i < numSpaces; i++)
 	{
-		//Checks rows
+		//Checks cols
 		if (this->board[i] == 32)
 			continue;
 		if (this->board[i] == this->board[i + 6] && this->board[i + 3] == this->board[i + 6])
@@ -63,19 +61,19 @@ void Board::winCondition(char piece, bool &gameRunning)
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
 		}
-		//Checks cols
-		if (this->board[i] == this->board[i + 2] && this->board[i + 1] == this->board[i + 2])
+		//Checks rows
+		if (this->board[i] == this->board[i + 1] && this->board[i + 1] == this->board[i + 2])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
 		}
 		//Checks diagnols
-		if (this->board[i] == this->board[i + 8] && this->board[i + 4] == this->board[i + 8])
+		if (this->board[i] == this->board[i+3] && this->board[i+3] == this->board[i+8])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
 		}
-		if (this->board[i] == this->board[i + 2] && this->board[i + 2] == this->board[i + 3])
+		if (this->board[2] == this->board[4] && this->board[4] == this->board[6])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
