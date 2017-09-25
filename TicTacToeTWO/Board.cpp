@@ -49,36 +49,26 @@ void Board::ClearBoard()
 			board[i] = 32;
 	}
 }
-void Board::winCondition(char piece)
+void Board::winCondition(char piece,bool &gameRunning)
 {
-	for (int i = 0; i < numSpaces; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		//Checks cols
 		if (this->board[i] == 32)
 			continue;
-		if (this->board[i] == this->board[i + 3])
+		if (this->board[i] == this->board[i + 6] && this->board[i + 3] == this->board[i + 6])
 		{
-			if (this->board[i] == this->board[i + 6] && this->board[i + 3] == this->board[i + 6])
-			{
-				std::cout << piece << " wins!" << std::endl;
-			}
+			std::cout << piece << " wins!" << std::endl;
+			gameRunning = false;
 		}
-<<<<<<< HEAD
-		//Checks rows
-		if (this->board[i] == this->board[i + 1] && this->board[i + 1] == this->board[i + 2])
-=======
 		//Checks cols
-		if (this->board[i] == this->board[i + 1])
->>>>>>> parent of d592124... winning will end the game
+		if (this->board[i] == this->board[i + 2] && this->board[i + 1] == this->board[i + 2])
 		{
-			if (this->board[i] == this->board[i + 2] && this->board[i + 1] == this->board[i + 2])
-			{
-				std::cout << piece << " wins!" << std::endl;
-			}
+			std::cout << piece << " wins!" << std::endl;
+			gameRunning = false;
 		}
 		//Checks diagnols
-<<<<<<< HEAD
-		if (this->board[i] == this->board[i+3] && this->board[i+3] == this->board[i+8])
+		if (this->board[i] == this->board[i + 3] && this->board[i + 3] == this->board[i + 8])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
@@ -87,14 +77,6 @@ void Board::winCondition(char piece)
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
-=======
-		if (this->board[i] == this->board[i + 4])
-		{
-			if (this->board[i] == this->board[i + 8] && this->board[i + 4] == this->board[i + 8])
-			{
-				std::cout << piece << " wins!" << std::endl;
-			}
->>>>>>> parent of d592124... winning will end the game
 		}
 	}
 }
