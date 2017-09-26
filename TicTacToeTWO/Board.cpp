@@ -19,7 +19,7 @@ Board::~Board()
 }
 void Board::chooseSpace(int &space, char piece)
 {
-	if (board[space - 1] == 'X' || board[space - 1] == 'O' || space - 1 > 8 || space - 1 < 0)
+	if (board[space - 1] != 32 || space - 1 > 8 || space - 1 < 0)
 	{
 		std::cout << "Invalid choice pick a new space.\n";
 		std::cin >> space;
@@ -60,6 +60,7 @@ void Board::winCondition(char piece, bool &gameRunning)
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
+			break;
 		}
 	}
 	//Checks cols
@@ -71,21 +72,25 @@ void Board::winCondition(char piece, bool &gameRunning)
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
+			break;
 		}
 	}
-		//Checks diagnols
-	for (int i = 0; i < 1; i++)
+	//Checks Diagnols
+	for (int i = 0; i < 3; i++)
 	{
-		if(this->board[i] == 32)
-		if (this->board[i] == this->board[i + 3] && this->board[i + 3] == this->board[i + 8])
+		if (this->board[i] == 32)
+			continue;
+		if (this->board[0] == this->board[4] && this->board[4] == this->board[8])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
+			break;
 		}
 		if (this->board[2] == this->board[4] && this->board[4] == this->board[6])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
+			break;
 		}
 	}
 }

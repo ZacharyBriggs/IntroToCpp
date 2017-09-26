@@ -17,7 +17,6 @@ int main()
 		changePiece(&playerPiece);
 	}
 	playAgain();
-	
 }
 void changePiece(char *piece)
 {

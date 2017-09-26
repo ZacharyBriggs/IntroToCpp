@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-class Board 
+class Board
 {
 	char *board;
 	int numSpaces;
