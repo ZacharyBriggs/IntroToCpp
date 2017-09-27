@@ -5,7 +5,6 @@ int main()
 	srand(time(NULL));
 	Player Zach;
 	Dungeon Mordor;
-	Mordor.GenRooms();
 	Mordor.PrintRooms();
 	Mordor.CheckPlayerPosition();
 	char direction;
@@ -15,7 +14,6 @@ int main()
 	}
 	system("pause");
 }
-
 char randDirection()
 {
 	int direction = rand()%4+1;

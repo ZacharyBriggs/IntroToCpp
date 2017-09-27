@@ -76,21 +76,27 @@ void Board::winCondition(char piece, bool &gameRunning)
 		}
 	}
 	//Checks Diagnols
-	for (int i = 0; i < 3; i++)
-	{
-		if (this->board[i] == 32)
-			continue;
-		if (this->board[0] == this->board[4] && this->board[4] == this->board[8])
+	if (this->board[0] != 32 && this->board[0] == this->board[4] && this->board[4] == this->board[8])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
-			break;
 		}
-		if (this->board[2] == this->board[4] && this->board[4] == this->board[6])
+	if (this->board[2] != 32 && this->board[2] == this->board[4] && this->board[4] == this->board[6])
 		{
 			std::cout << piece << " wins!" << std::endl;
 			gameRunning = false;
-			break;
+		}
+	//Checks for cat
+	int filledSpace = 0;
+	for (int i = 0; i < 9; i++)
+	{
+		if (board[i] != 32)
+			filledSpace++;
+		if (filledSpace ==9)
+		{
+			gameRunning = false;
+			std::cout << "You're all losers!" << std::endl;
 		}
 	}
+
 }
