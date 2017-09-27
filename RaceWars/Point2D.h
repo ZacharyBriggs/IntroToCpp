@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 class Point2D
 {
 private:
@@ -10,8 +11,9 @@ public:
 	Point2D operator+(const Point2D & other); //Adds 2 Point2D objects
 	Point2D operator-(const Point2D & other); //Subtracts 2 Point2D objects
 	Point2D operator*(const Point2D & other); //Finds product of two Point2D objects
-	Point2D operator*(float other);			  //Scales the value of a Point2D obj by a 
+	Point2D operator*(float other);			  //Scales the value of a Point2D obj by a
 	//value passed in
+	friend std::ostream& operator<<(std::ostream&stream, const Point2D &);
 	float GetX();							  //Gets the value of mX
 	float GetY();							  //Gets the value of mY
 	void PrintPoint();						  //Prints both mX and mY

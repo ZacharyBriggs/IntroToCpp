@@ -1,5 +1,4 @@
-#include "Point2D.h"
-#include <iostream>
+#include "Includes.h"
 Point2D::Point2D()
 {
 	mX = 0;
@@ -67,4 +66,12 @@ Point2D Point2D::operator-=(const Point2D & other)
 	temp.mX = mX -= other.mX;
 	temp.mY = mY -= other.mY;
 	return temp;
+}
+
+std::ostream & operator<<(std::ostream & stream, const Point2D & h)
+{
+	stream << h.mX;
+	std::cout << ",";
+	stream << h.mY;
+	return stream;
 }

@@ -1,5 +1,4 @@
-#include "Person.h"
-#include <iostream>
+#include "Includes.h"
 Person::Person()
 {
 	mName = "Default";

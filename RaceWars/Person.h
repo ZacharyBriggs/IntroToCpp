@@ -1,5 +1,5 @@
 #pragma once
-class Person 
+class Person
 {
 private:
 	int mAge;

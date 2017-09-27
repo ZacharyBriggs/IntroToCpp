@@ -1,5 +1,4 @@
-#include "Player.h"
-#include <iostream>
+#include "Includes.h"
 
 Player::Player()
 {
@@ -35,4 +34,9 @@ void Player::Move(char direction) //Moves the player up, down, left, or right
 void Player::SetPosition(Point2D * pos)
 {
 	mPosition = pos;
+}
+
+Point2D Player::GetPosition()
+{
+	return *mPosition;
 }

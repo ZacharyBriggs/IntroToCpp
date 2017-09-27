@@ -111,6 +111,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Dungeon.h" />
+    <ClInclude Include="Includes.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Point2D.h" />

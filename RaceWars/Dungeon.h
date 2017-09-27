@@ -7,9 +7,10 @@ private:
 	Player* mPlayer;
 	int mNumCols;
 	int mNumRows;
-	void GenRooms();
 public:
+	void GenRooms();
 	Dungeon();
 	Dungeon(Player* player, int rows, int cols);
+	bool CheckPlayerPosition();
 	void PrintRooms();
 };

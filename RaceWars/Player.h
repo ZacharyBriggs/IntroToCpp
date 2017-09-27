@@ -11,5 +11,5 @@ public:
 	Player(char* name);
 	void Move(char direction);
 	void SetPosition(Point2D* pos);
-
+	Point2D GetPosition();
 };

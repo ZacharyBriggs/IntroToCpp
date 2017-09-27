@@ -1,11 +1,13 @@
-#include "Player.h"
-#include <time.h>
-#include <iostream>
+#include "Includes.h"
 char randDirection();
 int main()
 {
 	srand(time(NULL));
 	Player Zach;
+	Dungeon Mordor;
+	Mordor.GenRooms();
+	Mordor.PrintRooms();
+	Mordor.CheckPlayerPosition();
 	char direction;
 	for (int i = 0; i < 10; i++)
 	{
