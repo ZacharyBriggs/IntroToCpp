@@ -92,7 +92,7 @@ void Board::winCondition(char piece, bool &gameRunning)
 	{
 		if (board[i] != 32)
 			filledSpace++;
-		if (filledSpace ==9)
+		if (filledSpace == 9)
 		{
 			gameRunning = false;
 			std::cout << "You're all losers!" << std::endl;
