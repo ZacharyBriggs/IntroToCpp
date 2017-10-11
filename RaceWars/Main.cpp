@@ -2,6 +2,12 @@
 char randDirection();
 int main()
 {
+	Point2D* testOne = new Point2D();
+	Point2D* testTwo = new Point2D();
+	if (testOne == testTwo)
+	{
+		std::cout << "Cool";
+	}
 	srand(time(NULL));
 	Player Zach;
 	Dungeon Mordor;
